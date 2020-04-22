@@ -3,11 +3,15 @@ function getIt() {
 }
 
 function frameIt() {
-  $('p').on("click", () => alert('Hey!'));
+  $('img').on("load", () => alert('Hey!'));
 }
 
 function pressIt() {
-  $('p').on("click", () => alert('Hey!'));
+  $(document).on('keydown', function(key) {
+  if(key.which == 'g'){
+      alert('s was pressed');
+  }
+});
 }
 
 function submitIt() {
