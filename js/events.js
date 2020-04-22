@@ -3,7 +3,7 @@ function getIt() {
 }
 
 function frameIt() {
-  $('img').on("load", () => alert('Hey!'));
+  $('img').on("load", () => $('img').addclass('tasty'));
 }
 
 function pressIt() {
